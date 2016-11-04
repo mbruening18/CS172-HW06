@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+//EX06_01 – Liang Programming Exercise 13.1: Create a text file
 void createTextFile();
 
 #endif /* CreateTextFile_hpp */

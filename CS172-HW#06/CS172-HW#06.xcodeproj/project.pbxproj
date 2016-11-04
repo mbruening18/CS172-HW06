@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C19F00B61DCD3ACC0099BE2C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00B51DCD3ACC0099BE2C /* main.cpp */; };
 		C19F00C11DCD3B250099BE2C /* CreateTextFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */; };
+		C19F00C41DCD3C500099BE2C /* CountCharacters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00C21DCD3C500099BE2C /* CountCharacters.cpp */; };
+		C19F00C71DCD3D810099BE2C /* BabyNames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00C51DCD3D810099BE2C /* BabyNames.cpp */; };
+		C19F00CA1DCD424C0099BE2C /* CircleClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00C81DCD424C0099BE2C /* CircleClass.cpp */; };
+		C19F00CD1DCD469C0099BE2C /* ComplexClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00CB1DCD469C0099BE2C /* ComplexClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,14 @@
 		C19F00B51DCD3ACC0099BE2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreateTextFile.cpp; sourceTree = "<group>"; };
 		C19F00C01DCD3B250099BE2C /* CreateTextFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CreateTextFile.hpp; sourceTree = "<group>"; };
+		C19F00C21DCD3C500099BE2C /* CountCharacters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CountCharacters.cpp; sourceTree = "<group>"; };
+		C19F00C31DCD3C500099BE2C /* CountCharacters.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CountCharacters.hpp; sourceTree = "<group>"; };
+		C19F00C51DCD3D810099BE2C /* BabyNames.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BabyNames.cpp; sourceTree = "<group>"; };
+		C19F00C61DCD3D810099BE2C /* BabyNames.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BabyNames.hpp; sourceTree = "<group>"; };
+		C19F00C81DCD424C0099BE2C /* CircleClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleClass.cpp; sourceTree = "<group>"; };
+		C19F00C91DCD424C0099BE2C /* CircleClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleClass.hpp; sourceTree = "<group>"; };
+		C19F00CB1DCD469C0099BE2C /* ComplexClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComplexClass.cpp; sourceTree = "<group>"; };
+		C19F00CC1DCD469C0099BE2C /* ComplexClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComplexClass.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,14 @@
 				C19F00B51DCD3ACC0099BE2C /* main.cpp */,
 				C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */,
 				C19F00C01DCD3B250099BE2C /* CreateTextFile.hpp */,
+				C19F00C21DCD3C500099BE2C /* CountCharacters.cpp */,
+				C19F00C31DCD3C500099BE2C /* CountCharacters.hpp */,
+				C19F00C51DCD3D810099BE2C /* BabyNames.cpp */,
+				C19F00C61DCD3D810099BE2C /* BabyNames.hpp */,
+				C19F00C81DCD424C0099BE2C /* CircleClass.cpp */,
+				C19F00C91DCD424C0099BE2C /* CircleClass.hpp */,
+				C19F00CB1DCD469C0099BE2C /* ComplexClass.cpp */,
+				C19F00CC1DCD469C0099BE2C /* ComplexClass.hpp */,
 			);
 			path = "CS172-HW#06";
 			sourceTree = "<group>";
@@ -124,8 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19F00C71DCD3D810099BE2C /* BabyNames.cpp in Sources */,
+				C19F00CA1DCD424C0099BE2C /* CircleClass.cpp in Sources */,
 				C19F00C11DCD3B250099BE2C /* CreateTextFile.cpp in Sources */,
+				C19F00CD1DCD469C0099BE2C /* ComplexClass.cpp in Sources */,
 				C19F00B61DCD3ACC0099BE2C /* main.cpp in Sources */,
+				C19F00C41DCD3C500099BE2C /* CountCharacters.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
