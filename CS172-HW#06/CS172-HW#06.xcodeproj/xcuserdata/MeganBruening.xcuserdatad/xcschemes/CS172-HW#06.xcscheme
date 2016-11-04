@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C19F00981DCD33A90099BE2C"
-               BuildableName = "CS172-HW06"
-               BlueprintName = "CS172-HW06"
-               ReferencedContainer = "container:CS172-HW06.xcodeproj">
+               BlueprintIdentifier = "C19F00B11DCD3ACC0099BE2C"
+               BuildableName = "CS172-HW#06"
+               BlueprintName = "CS172-HW#06"
+               ReferencedContainer = "container:CS172-HW#06.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C19F00981DCD33A90099BE2C"
-            BuildableName = "CS172-HW06"
-            BlueprintName = "CS172-HW06"
-            ReferencedContainer = "container:CS172-HW06.xcodeproj">
+            BlueprintIdentifier = "C19F00B11DCD3ACC0099BE2C"
+            BuildableName = "CS172-HW#06"
+            BlueprintName = "CS172-HW#06"
+            ReferencedContainer = "container:CS172-HW#06.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C19F00981DCD33A90099BE2C"
-            BuildableName = "CS172-HW06"
-            BlueprintName = "CS172-HW06"
-            ReferencedContainer = "container:CS172-HW06.xcodeproj">
+            BlueprintIdentifier = "C19F00B11DCD3ACC0099BE2C"
+            BuildableName = "CS172-HW#06"
+            BlueprintName = "CS172-HW#06"
+            ReferencedContainer = "container:CS172-HW#06.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C19F00981DCD33A90099BE2C"
-            BuildableName = "CS172-HW06"
-            BlueprintName = "CS172-HW06"
-            ReferencedContainer = "container:CS172-HW06.xcodeproj">
+            BlueprintIdentifier = "C19F00B11DCD3ACC0099BE2C"
+            BuildableName = "CS172-HW#06"
+            BlueprintName = "CS172-HW#06"
+            ReferencedContainer = "container:CS172-HW#06.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

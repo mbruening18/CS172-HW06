@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C19F009D1DCD33A90099BE2C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F009C1DCD33A90099BE2C /* main.cpp */; };
+		C19F00B61DCD3ACC0099BE2C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00B51DCD3ACC0099BE2C /* main.cpp */; };
+		C19F00C11DCD3B250099BE2C /* CreateTextFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C19F00971DCD33A90099BE2C /* CopyFiles */ = {
+		C19F00B01DCD3ACC0099BE2C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C19F00991DCD33A90099BE2C /* CS172-HW06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS172-HW06"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C19F009C1DCD33A90099BE2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C19F00B21DCD3ACC0099BE2C /* CS172-HW#06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS172-HW#06"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F00B51DCD3ACC0099BE2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreateTextFile.cpp; sourceTree = "<group>"; };
+		C19F00C01DCD3B250099BE2C /* CreateTextFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CreateTextFile.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C19F00961DCD33A90099BE2C /* Frameworks */ = {
+		C19F00AF1DCD3ACC0099BE2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +41,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C19F00901DCD33A90099BE2C = {
+		C19F00A91DCD3ACC0099BE2C = {
 			isa = PBXGroup;
 			children = (
-				C19F009B1DCD33A90099BE2C /* CS172-HW06 */,
-				C19F009A1DCD33A90099BE2C /* Products */,
+				C19F00B41DCD3ACC0099BE2C /* CS172-HW#06 */,
+				C19F00B31DCD3ACC0099BE2C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C19F009A1DCD33A90099BE2C /* Products */ = {
+		C19F00B31DCD3ACC0099BE2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C19F00991DCD33A90099BE2C /* CS172-HW06 */,
+				C19F00B21DCD3ACC0099BE2C /* CS172-HW#06 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C19F009B1DCD33A90099BE2C /* CS172-HW06 */ = {
+		C19F00B41DCD3ACC0099BE2C /* CS172-HW#06 */ = {
 			isa = PBXGroup;
 			children = (
-				C19F009C1DCD33A90099BE2C /* main.cpp */,
+				C19F00B51DCD3ACC0099BE2C /* main.cpp */,
+				C19F00BF1DCD3B250099BE2C /* CreateTextFile.cpp */,
+				C19F00C01DCD3B250099BE2C /* CreateTextFile.hpp */,
 			);
-			path = "CS172-HW06";
+			path = "CS172-HW#06";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C19F00981DCD33A90099BE2C /* CS172-HW06 */ = {
+		C19F00B11DCD3ACC0099BE2C /* CS172-HW#06 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C19F00A01DCD33A90099BE2C /* Build configuration list for PBXNativeTarget "CS172-HW06" */;
+			buildConfigurationList = C19F00B91DCD3ACC0099BE2C /* Build configuration list for PBXNativeTarget "CS172-HW#06" */;
 			buildPhases = (
-				C19F00951DCD33A90099BE2C /* Sources */,
-				C19F00961DCD33A90099BE2C /* Frameworks */,
-				C19F00971DCD33A90099BE2C /* CopyFiles */,
+				C19F00AE1DCD3ACC0099BE2C /* Sources */,
+				C19F00AF1DCD3ACC0099BE2C /* Frameworks */,
+				C19F00B01DCD3ACC0099BE2C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "CS172-HW06";
-			productName = "CS172-HW06";
-			productReference = C19F00991DCD33A90099BE2C /* CS172-HW06 */;
+			name = "CS172-HW#06";
+			productName = "CS172-HW#06";
+			productReference = C19F00B21DCD3ACC0099BE2C /* CS172-HW#06 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C19F00911DCD33A90099BE2C /* Project object */ = {
+		C19F00AA1DCD3ACC0099BE2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Megan Bruening";
 				TargetAttributes = {
-					C19F00981DCD33A90099BE2C = {
+					C19F00B11DCD3ACC0099BE2C = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = C19F00941DCD33A90099BE2C /* Build configuration list for PBXProject "CS172-HW06" */;
+			buildConfigurationList = C19F00AD1DCD3ACC0099BE2C /* Build configuration list for PBXProject "CS172-HW#06" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C19F00901DCD33A90099BE2C;
-			productRefGroup = C19F009A1DCD33A90099BE2C /* Products */;
+			mainGroup = C19F00A91DCD3ACC0099BE2C;
+			productRefGroup = C19F00B31DCD3ACC0099BE2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C19F00981DCD33A90099BE2C /* CS172-HW06 */,
+				C19F00B11DCD3ACC0099BE2C /* CS172-HW#06 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C19F00951DCD33A90099BE2C /* Sources */ = {
+		C19F00AE1DCD3ACC0099BE2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C19F009D1DCD33A90099BE2C /* main.cpp in Sources */,
+				C19F00C11DCD3B250099BE2C /* CreateTextFile.cpp in Sources */,
+				C19F00B61DCD3ACC0099BE2C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C19F009E1DCD33A90099BE2C /* Debug */ = {
+		C19F00B71DCD3ACC0099BE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -173,7 +179,7 @@
 			};
 			name = Debug;
 		};
-		C19F009F1DCD33A90099BE2C /* Release */ = {
+		C19F00B81DCD3ACC0099BE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,14 +219,14 @@
 			};
 			name = Release;
 		};
-		C19F00A11DCD33A90099BE2C /* Debug */ = {
+		C19F00BA1DCD3ACC0099BE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C19F00A21DCD33A90099BE2C /* Release */ = {
+		C19F00BB1DCD3ACC0099BE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -230,24 +236,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C19F00941DCD33A90099BE2C /* Build configuration list for PBXProject "CS172-HW06" */ = {
+		C19F00AD1DCD3ACC0099BE2C /* Build configuration list for PBXProject "CS172-HW#06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C19F009E1DCD33A90099BE2C /* Debug */,
-				C19F009F1DCD33A90099BE2C /* Release */,
+				C19F00B71DCD3ACC0099BE2C /* Debug */,
+				C19F00B81DCD3ACC0099BE2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C19F00A01DCD33A90099BE2C /* Build configuration list for PBXNativeTarget "CS172-HW06" */ = {
+		C19F00B91DCD3ACC0099BE2C /* Build configuration list for PBXNativeTarget "CS172-HW#06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C19F00A11DCD33A90099BE2C /* Debug */,
-				C19F00A21DCD33A90099BE2C /* Release */,
+				C19F00BA1DCD3ACC0099BE2C /* Debug */,
+				C19F00BB1DCD3ACC0099BE2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C19F00911DCD33A90099BE2C /* Project object */;
+	rootObject = C19F00AA1DCD3ACC0099BE2C /* Project object */;
 }
