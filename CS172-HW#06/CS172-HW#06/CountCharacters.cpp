@@ -21,31 +21,40 @@ using namespace std;
 #include "CountCharacters.hpp"
 
 //EX06_02 – Liang Programming Exercise 13.2: Count characters
+
 void countCharacters()
 {
-    string inputFilename;
-    cout<<"Enter a file name"<<endl;
-    cin>> inputFilename;
+    /*
+    string fileName;
+    // Prompts user for a file name
     
-    int sumChars =0;
-    char currentChar;
+    cout << "Enter a file name: ";
+    getline(cin, fileName);
     
-    ifstream input(inputFilename.c_str());
+    // Opens file for input and output
+    fstream iofile(fileName, ios::in | ios::out);
     
-    if(input.fail())
+    int count =0;
+    
+    // Checks to make sure file opened
+    if(!iofile)
     {
-        cout<< inputFilename<<" does not exist" <<endl;
+        cout << "ERROR: Could not open file" << endl;
     }
+    // Counts the characters in the file
     else
     {
-        cout<<"Number of characters in File: "<<endl;
-        while(input >> currentChar)
+        char character;
+        while( iofile >> character)
         {
-            cout<< currentChar<<" ";
-            sumChars++;
+            count++;
         }
-        
+        iofile.clear();
+        cout << "The file has " << count << " characters" << endl;
     }
+    // Closes the opened file
+    iofile.close();
+     */
 }
 
 

@@ -52,46 +52,48 @@ int main()
     //EX06_03 – Liang Programming Exercise 13.5: Baby names
     cout << "Exercise 13.5: Baby names"<<endl;
     
-    babyName();
+    //babyName();
     
     cout << ""<<endl;
     
     //EX06_04 – Liang Programming Exercise 14.3: The Circle class
     cout << "Exercise 14.3: The Circle class"<<endl;
     
-    /*
-    Circle temp;
-    int SIZE =0;
+    Circle c1(6);
+    Circle c2(14);
     
-    Circle arrayOfCircles[SIZE] = {Circle(3.5), Circle(2.33), Circle(9.81)};
-        
-    for (int i= 0; i< SIZE-1; i++)
-    {
-        for (int j=SIZE -1; j>0; j--)
-        {
-            if (arrayOfCircles[j] < arrayOfCircles[j-1])
-            {
-                temp = arrayOfCircles[j];
-                arrayOfCircles[j] = arrayOfCircles[j-1];
-                arrayOfCircles[j-1] =temp;
-            }
-        }
-        for (int i= 0; i< SIZE; i++)
-            cout << " Circle [" << i << "]: area of " <<arrayOfCircles[i].getArea() << ", radius of " <<arrayOfCircles[i].getRadius()<<endl;
-        }
-        
-    
-    */
+    if(c1.getRadius() < c2.getRadius())
+        cout << "The first circle is smaller than the second" << endl;
+    if(c1.getRadius() <= c2.getRadius())
+        cout << "The fist circle is smaller than or equal to the second" << endl;
+    if(c1.getRadius() == c2.getRadius())
+        cout << "The first circle is equal to the second" << endl;
+    if(c1.getRadius() != c2.getRadius())
+        cout << "The first circle is not equal to the second" << endl;
+    if(c1.getRadius() > c2.getRadius())
+        cout << "The first circle is greater than the second" << endl;
+    if(c1.getRadius() >= c2.getRadius())
+        cout << "The first circle is greater than or equal to the second" << endl;
+
+   
     cout << ""<<endl;
     
     //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
     cout << "Exercise 14.7: Math: The Complex class"<<endl;
     
-   complexClass();
+  
+    int A, B;
+    int C, D;
+    cout << "Enter the first complex number: ";
+    cin >> A >> B;
+    cout << "Enter the second complex number: ";
+    cin >> C >> D;
+    Complex Com1(A, B);
+    Complex Com2(C, D);
+   .add(c1, c2);
 
-    
     cout << ""<<endl;
-    
+
     return 0;
     
 }

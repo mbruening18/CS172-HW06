@@ -13,6 +13,24 @@
 
 //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
 
-void complexClass();
-
+class Complex
+{
+private:
+    double a;
+    double b;
+    
+public:
+    Complex();
+    Complex(double);
+    Complex(double, double);
+    
+    double getA();
+    double getB();
+    
+    Complex add(Complex&, Complex&);
+    Complex subtract(Complex&, Complex&);
+    Complex multiply(Complex&, Complex&);
+    Complex divide(Complex&, Complex&);
+    double abs(Complex&, Complex&);
+};
 #endif /* ComplexClass_hpp */

@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 //EX06_02 – Liang Programming Exercise 13.2: Count characters
+
 void countCharacters();
 
 #endif /* CountCharacters_hpp */
