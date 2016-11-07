@@ -21,6 +21,7 @@
 using namespace std;
 
 //EX06_03 – Liang Programming Exercise 13.5: Baby names
+
 void babyName()
 {
     int array[5], i, j, year, rank, bscore, gscore;
@@ -78,9 +79,16 @@ void babyName()
     }
     input.close();
     
+ }
+ 
     
-    
-    
+
+
+
+
+
+
+
     
     
     /*
@@ -136,5 +144,5 @@ void babyName()
     babyFile.close();
     */
     
-}
+
 

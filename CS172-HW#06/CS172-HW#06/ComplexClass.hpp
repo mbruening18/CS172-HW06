@@ -33,4 +33,5 @@ public:
     Complex divide(Complex&, Complex&);
     double abs(Complex&, Complex&);
 };
+
 #endif /* ComplexClass_hpp */

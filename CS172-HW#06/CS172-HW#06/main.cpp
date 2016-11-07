@@ -84,13 +84,19 @@ int main()
   
     int A, B;
     int C, D;
+    Complex result;
+    Complex complex1(A, B);
+    Complex complex2(C, D);
     cout << "Enter the first complex number: ";
     cin >> A >> B;
     cout << "Enter the second complex number: ";
     cin >> C >> D;
-    Complex Com1(A, B);
-    Complex Com2(C, D);
-   .add(c1, c2);
+    
+    result.add(complex1, complex2);
+    result.subtract(complex1, complex2);
+    result.multiply(complex1, complex2);
+    result.divide(complex1, complex2);
+    result.abs(complex1, complex2);
 
     cout << ""<<endl;
 

@@ -26,22 +26,20 @@ void countCharacters()
 {
     /*
     string fileName;
-    // Prompts user for a file name
+    
     
     cout << "Enter a file name: ";
     getline(cin, fileName);
-    
-    // Opens file for input and output
+
     fstream iofile(fileName, ios::in | ios::out);
     
     int count =0;
     
-    // Checks to make sure file opened
     if(!iofile)
     {
         cout << "ERROR: Could not open file" << endl;
     }
-    // Counts the characters in the file
+    
     else
     {
         char character;
@@ -52,7 +50,7 @@ void countCharacters()
         iofile.clear();
         cout << "The file has " << count << " characters" << endl;
     }
-    // Closes the opened file
+
     iofile.close();
      */
 }
