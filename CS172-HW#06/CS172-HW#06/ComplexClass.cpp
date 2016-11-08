@@ -45,36 +45,37 @@ double Complex::getB()
 {
     return b;
 }
-Complex Complex::add(Complex& c1, Complex& c2)
+double Complex::abs()
 {
-    double newA = c1.getA() + c2.getA();
-    double newB = c1.getB() + c2.getB();
-    Complex cSum(newA, newB);
-    return cSum;
-}
-Complex subtract(Complex& c1, Complex& c2)
-{
-    double newA = c1.getA() - c2.getB();
-    double newB = c1.getB() - c2.getB();
-    Complex cSub(newA, newB);
-    return cSub;
-}
-Complex multiply(Complex& c1, Complex& c2)
-{
-    double newA = (c1.getA() * c2.getA()) - (c1.getB() * c2.getB());
-    double newB = (c1.getB() * c2.getA()) + (c1.getA() * c2.getB());
-    Complex cSub(newA, newB);
-    return cSub;
-}
-Complex divide(Complex& c1, Complex& c2)
-{
-    double newA = ((c1.getA() * c2.getA()) + (c1.getB() * c2.getB())) / ((c2.getA() * c2.getA()) + (c2.getB() * c2.getB()));
-    double newB = (c1.getB() * c2.getA()) - (c1.getA() * c2.getB()) / ((c2.getA() * c2.getA()) + (c2.getB() * c2.getB()));
-    Complex cDiv(newA, newB);
-    return cDiv;
-}
-double abs(Complex& c1, Complex& c2)
-{
-    double ABS = pow(pow( c1.getA(), 2) + pow(c1.getB() , 2), 1/2);
+    double ABS = pow(pow(getA(), 2) + pow(getB() , 2), .5);
     return ABS;
 }
+
+Complex Complex::operator+(Complex& num)
+{
+    return Complex(this->a+num.getA(), this->b+num.getB());
+}
+Complex Complex:: operator-(Complex& num)
+{
+    return Complex(this->a-num.getA(), this->b-num.getB());
+}
+Complex Complex::operator*(Complex& num)
+{
+    return Complex(this->a*num.getA() - b*num.getB(), this->b*num.getA() + a*num.getB());
+}
+Complex Complex::operator/(Complex& num)
+{
+    return Complex((this->a*num.getA() + b*num.getB())/(num.getA()*num.getA()+ num.getB()*num.getB()),
+                   (this->b*num.getA() - a*num.getB())/(num.getA()*num.getA()+ num.getB()*num.getB()));
+}
+
+ostream& operator<<(ostream& str, Complex& num)
+{
+    str<< num.getA() <<" + "<< num.getB();
+    return str;
+}
+
+
+
+
+

@@ -38,7 +38,7 @@ int main()
     
     createTextFile();
     
-    cout << ""<<endl;
+    cout << " "<<endl;
     
     
     //EX06_02 – Liang Programming Exercise 13.2: Count characters
@@ -46,15 +46,16 @@ int main()
     
     countCharacters();
     
-    cout << ""<<endl;
-    
+    cout << " "<<endl;
+    cout << " "<<endl;
     
     //EX06_03 – Liang Programming Exercise 13.5: Baby names
     cout << "Exercise 13.5: Baby names"<<endl;
     
-    //babyName();
+    babyName();
     
-    cout << ""<<endl;
+    
+    cout << " "<<endl;
     
     //EX06_04 – Liang Programming Exercise 14.3: The Circle class
     cout << "Exercise 14.3: The Circle class"<<endl;
@@ -62,43 +63,54 @@ int main()
     Circle c1(6);
     Circle c2(14);
     
-    if(c1.getRadius() < c2.getRadius())
-        cout << "The first circle is smaller than the second" << endl;
-    if(c1.getRadius() <= c2.getRadius())
-        cout << "The fist circle is smaller than or equal to the second" << endl;
-    if(c1.getRadius() == c2.getRadius())
-        cout << "The first circle is equal to the second" << endl;
-    if(c1.getRadius() != c2.getRadius())
-        cout << "The first circle is not equal to the second" << endl;
-    if(c1.getRadius() > c2.getRadius())
-        cout << "The first circle is greater than the second" << endl;
-    if(c1.getRadius() >= c2.getRadius())
-        cout << "The first circle is greater than or equal to the second" << endl;
+    if(c1 < c2)
+        cout << "The first circle is smaller than the second circle" << endl;
+    if(c1 <= c2)
+        cout << "The fist circle is smaller than or equal to the second circle" << endl;
+    if(c1 == c2)
+        cout << "The first circle is equal to the second circle" << endl;
+    if(c1 != c2)
+        cout << "The first circle is not equal to the second circle" << endl;
+    if(c1 > c2)
+        cout << "The first circle is greater than the second circle" << endl;
+    if(c1 >= c2)
+        cout << "The first circle is greater than or equal to the second circle" << endl;
 
    
-    cout << ""<<endl;
+    cout << " "<<endl;
     
     //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
     cout << "Exercise 14.7: Math: The Complex class"<<endl;
+
+    double A;
+    double B;
+    double C;
+    double D;
     
-  
-    int A, B;
-    int C, D;
-    Complex result;
-    Complex complex1(A, B);
-    Complex complex2(C, D);
     cout << "Enter the first complex number: ";
     cin >> A >> B;
     cout << "Enter the second complex number: ";
     cin >> C >> D;
+    Complex result;
+    Complex complex1(A, B);
+    Complex complex2(C, D);
+    result = complex1 + complex2;
+    result = complex1 - complex2;
+    result = complex1 * complex2;
+    result = complex1 / complex2;
     
-    result.add(complex1, complex2);
-    result.subtract(complex1, complex2);
-    result.multiply(complex1, complex2);
-    result.divide(complex1, complex2);
-    result.abs(complex1, complex2);
+    double abs;
+    abs = complex1.abs();
 
-    cout << ""<<endl;
+    cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
+    cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
+    cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
+    cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
+    cout << "|" <<complex1 << "i| = " << abs;
+    
+
+
+    cout << " "<<endl;
 
     return 0;
     

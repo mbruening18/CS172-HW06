@@ -10,7 +10,7 @@
 #define ComplexClass_hpp
 
 #include <stdio.h>
-
+using namespace std;
 //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
 
 class Complex
@@ -27,11 +27,14 @@ public:
     double getA();
     double getB();
     
-    Complex add(Complex&, Complex&);
-    Complex subtract(Complex&, Complex&);
-    Complex multiply(Complex&, Complex&);
-    Complex divide(Complex&, Complex&);
-    double abs(Complex&, Complex&);
+    double abs();
+    Complex operator+(Complex& num);
+    Complex operator-(Complex& num);
+    Complex operator*(Complex& num);
+    Complex operator/(Complex& num);
+    
+    friend ostream& operator<<(ostream& str,  Complex& num);
+    
 };
 
 #endif /* ComplexClass_hpp */

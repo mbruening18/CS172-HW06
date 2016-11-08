@@ -26,6 +26,12 @@ public:
     double getRadius()const;
     void setRadius(double newRadius);
     static int getNumberOfObject();
-};
+    bool operator<(Circle& c);
+    bool operator<=(Circle& c);
+    bool operator==(Circle& c);
+    bool operator!=(Circle& c);
+    bool operator>(Circle& c);
+    bool operator>=(Circle& c);
+    };
 
 #endif /* CircleClass_hpp */

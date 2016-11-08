@@ -24,12 +24,20 @@ using namespace std;
 
 void babyName()
 {
-    int array[5], i, j, year, rank, bscore, gscore;
+    int year;
+    int rank;
+    string bscore;
+    string gscore;
+    
     char ch;
-    string name, bname, gname, filename;
-    //input from console
+    string name;
+    string bname;
+    string gname;
+    string filename;
+  
     cout << "Enter the year: ";
     cin >> year;
+    
     switch (year)
     {
         case 2010:filename = "Babynameranking2010.txt";
@@ -44,16 +52,17 @@ void babyName()
             break;
         default: cout << "wrong entry year!";
     }
+    
     cout << "Enter the gender: ";
     cin >> ch;
     cout << "Enter the name: ";
     cin >> name;
-    //open file
+    
     ifstream input(filename.c_str());
-    //file not present
+    
     if (input.fail())
     {
-        cout << filename << "file not exist. Exit program";
+        cout << filename << "File not exist. Exit program";
         
     }
     if (!input.eof())
@@ -65,14 +74,14 @@ void babyName()
             {
                 if (name == bname)
                 {
-                    cout << name << "is ranked #" << rank << "in year" << year;
+                    cout << name << " is ranked #" << rank << " in year " << year<<endl;
                 }
             }
             else if (ch == 'F' || ch == 'f')
             {
                 if (name == gname)
                 {
-                    cout << name << "is ranked #" << rank << "in year" << year;
+                    cout << name << " is ranked #" << rank << " in year " << year<<endl;
                 }
             }
         }

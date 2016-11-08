@@ -54,6 +54,7 @@ double Circle::getRadius() const
 void Circle::setRadius(double newRadius)
 {
     radius= (newRadius >= 0) ? newRadius:0;
+    
 }
 
 //Return the number of circle objects
@@ -62,6 +63,48 @@ int Circle::getNumberOfObject()
     return numberOfObjects;
 }
 
+bool Circle::operator<(Circle& c)
+{
+    if(getRadius() < c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator<=(Circle& c)
+{
+    if(getRadius() <= c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator==(Circle& c)
+{
+    if(getRadius() == c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator!=(Circle& c)
+{
+    if(getRadius() != c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator>(Circle& c)
+{
+    if(getRadius() > c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator>=(Circle& c)
+{
+    if(getRadius() >= c.getRadius())
+        return true;
+    else
+        return false;
+}
 
 
 
