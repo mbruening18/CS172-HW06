@@ -47,7 +47,6 @@ int main()
     countCharacters();
     
     cout << " "<<endl;
-    cout << " "<<endl;
     
     //EX06_03 – Liang Programming Exercise 13.5: Baby names
     cout << "Exercise 13.5: Baby names"<<endl;
@@ -89,23 +88,26 @@ int main()
     
     cout << "Enter the first complex number: ";
     cin >> A >> B;
+    
     cout << "Enter the second complex number: ";
     cin >> C >> D;
     Complex result;
     Complex complex1(A, B);
     Complex complex2(C, D);
     result = complex1 + complex2;
+    cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
+    
     result = complex1 - complex2;
+    cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
+    
     result = complex1 * complex2;
+    cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
+
     result = complex1 / complex2;
+    cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
     
     double abs;
     abs = complex1.abs();
-
-    cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
-    cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
-    cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
-    cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
     cout << "|" <<complex1 << "i| = " << abs;
     
 
