@@ -5,6 +5,7 @@
 //  Created by Megan Bruening on 11/4/16.
 //  Copyright © 2016 Megan Bruening. All rights reserved.
 //
+//
 
 #ifndef ComplexClass_hpp
 #define ComplexClass_hpp

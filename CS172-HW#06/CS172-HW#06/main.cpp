@@ -5,6 +5,7 @@
 //  Created by Megan Bruening on 11/4/16.
 //  Copyright © 2016 Megan Bruening. All rights reserved.
 //
+//
 
 //EX06_01 – Liang Programming Exercise 13.1: Create a text file
 //EX06_02 – Liang Programming Exercise 13.2: Count characters
