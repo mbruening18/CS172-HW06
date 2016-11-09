@@ -13,6 +13,7 @@
 
 //EX06_02 – Liang Programming Exercise 13.2: Count characters
 
+//promise
 void countCharacters();
 
 #endif /* CountCharacters_hpp */

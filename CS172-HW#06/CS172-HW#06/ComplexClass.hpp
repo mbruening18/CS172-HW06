@@ -13,13 +13,17 @@
 using namespace std;
 //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
 
+//creates a Complex class
 class Complex
 {
+//makes private
 private:
     double a;
     double b;
     
+//makes public
 public:
+    //no-arg constructor
     Complex();
     Complex(double);
     Complex(double, double);

@@ -33,87 +33,125 @@ using namespace std;
 
 int main()
 {
-    //EX06_01 – Liang Programming Exercise 13.1: Create a text file
-    cout << "Exercise 13.1: Create a text file"<<endl;
+    //EX06_01 – Liang Programming Exercise 13.1: Create a text file//
+        cout << "Exercise 13.1: Create a text file"<<endl;
     
-    createTextFile();
+        //Implements function
+        createTextFile();
     
-    cout << " "<<endl;
-    
-    
-    //EX06_02 – Liang Programming Exercise 13.2: Count characters
-    cout << "Exercise 13.2: Count characters"<<endl;
-    
-    countCharacters();
-    
-    cout << " "<<endl;
-    
-    //EX06_03 – Liang Programming Exercise 13.5: Baby names
-    cout << "Exercise 13.5: Baby names"<<endl;
-    
-    babyName();
+        cout << " "<<endl;
     
     
-    cout << " "<<endl;
+    //EX06_02 – Liang Programming Exercise 13.2: Count characters//
+        cout << "Exercise 13.2: Count characters"<<endl;
     
-    //EX06_04 – Liang Programming Exercise 14.3: The Circle class
-    cout << "Exercise 14.3: The Circle class"<<endl;
+        //Implements function
+        countCharacters();
     
-    Circle c1(6);
-    Circle c2(14);
+        cout << " "<<endl;
     
-    if(c1 < c2)
-        cout << "The first circle is smaller than the second circle" << endl;
-    if(c1 <= c2)
-        cout << "The fist circle is smaller than or equal to the second circle" << endl;
-    if(c1 == c2)
-        cout << "The first circle is equal to the second circle" << endl;
-    if(c1 != c2)
-        cout << "The first circle is not equal to the second circle" << endl;
-    if(c1 > c2)
-        cout << "The first circle is greater than the second circle" << endl;
-    if(c1 >= c2)
-        cout << "The first circle is greater than or equal to the second circle" << endl;
-
+    //EX06_03 – Liang Programming Exercise 13.5: Baby names//
+        cout << "Exercise 13.5: Baby names"<<endl;
+    
+        //Implements function
+        babyName();
+    
+        cout << " "<<endl;
+    
+    //EX06_04 – Liang Programming Exercise 14.3: The Circle class//
+        cout << "Exercise 14.3: The Circle class"<<endl;
+    
+        //declares Circle and value of circle 1 and 2
+        Circle c1(6);
+        Circle c2(14);
+    
+        //Creates if statements with diffrent conditions
+        //less-than
+        if(c1 < c2)
+        {
+            cout << "The first circle is smaller than the second circle" << endl;
+        }
+        //less-than or equal
+        if(c1 <= c2)
+        {
+            cout << "The fist circle is smaller than or equal to the second circle" << endl;
+        }
+        //equal
+        if(c1 == c2)
+        {
+            cout << "The first circle is equal to the second circle" << endl;
+        }
+        //not equal
+        if(c1 != c2)
+        {
+            cout << "The first circle is not equal to the second circle" << endl;
+        }
+        //greater-than
+        if(c1 > c2)
+        {
+            cout << "The first circle is greater than the second circle" << endl;
+        }
+        //greater-than or equal
+        if(c1 >= c2)
+        {
+            cout << "The first circle is greater than or equal to the second circle" << endl;
+        }
    
-    cout << " "<<endl;
+        cout << " "<<endl;
     
     //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
-    cout << "Exercise 14.7: Math: The Complex class"<<endl;
+        cout << "Exercise 14.7: Math: The Complex class"<<endl;
 
-    double A;
-    double B;
-    double C;
-    double D;
+        //4 value that takes in a double
+        double A;
+        double B;
+        double C;
+        double D;
     
-    cout << "Enter the first complex number: ";
-    cin >> A >> B;
+        //enters the 1st set of numbers
+        cout << "Enter the first set of complex numbers: ";
+        cin >> A >> B;
     
-    cout << "Enter the second complex number: ";
-    cin >> C >> D;
-    Complex result;
-    Complex complex1(A, B);
-    Complex complex2(C, D);
-    result = complex1 + complex2;
-    cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
+        //enters the 2nd set of numbers
+        cout << "Enter the second set of complex numbers: ";
+        cin >> C >> D;
     
-    result = complex1 - complex2;
-    cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
+        //Declares Complex as result, complex1, complex2
+        Complex result;
+        //compiles variables in complex1 and complex2
+        Complex complex1(A, B);
+        Complex complex2(C, D);
     
-    result = complex1 * complex2;
-    cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
+        //result equals the addition of complex1 and complex2
+        result = complex1 + complex2;
+        //couts the result like the book
+        cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
+    
+        //result equals the subtraction of complex1 and complex2
+        result = complex1 - complex2;
+        //couts the result like the book
+        cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
+    
+        //result equals the mulitplication of complex1 and complex2
+        result = complex1 * complex2;
+        //couts the result like the book
+        cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
 
-    result = complex1 / complex2;
-    cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
+        //result equals the division of complex1 and complex2
+        result = complex1 / complex2;
+        //couts the result like the book
+        cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
     
-    double abs;
-    abs = complex1.abs();
-    cout << "|" <<complex1 << "i| = " << abs;
+        //creates double for absolute value
+        double abs;
+        //does the absolute value of complex1
+        abs = complex1.abs();
+        //couts the result like the book
+        cout << "|" <<complex1 << "i| = " << abs;
     
+    
+        cout << " "<<endl;
 
-
-    cout << " "<<endl;
-
-    return 0;
+        return 0;
     
 }

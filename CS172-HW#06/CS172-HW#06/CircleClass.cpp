@@ -22,88 +22,124 @@ using namespace std;
 
 //EX06_04 – Liang Programming Exercise 14.3: The Circle class
 
+//sets the number of objects to zero
 int Circle::numberOfObjects=0;
 
-//construct a circle object
+//constructs a circle with radius 1 and counter of number of objects
 Circle::Circle()
 {
     radius=1;
     numberOfObjects++;
 }
 
-//construct a circle object
+//constructs a new circle with new radius and counter of number of objects
 Circle::Circle(double NewRadius)
 {
     radius=NewRadius;
     numberOfObjects++;
 }
 
-//Return the area of the circle
+//returns the area of a circle r^2 * Pi
 double Circle::getArea() const
 {
     return radius * radius * 3.14159;
 }
 
-//Return the radius of this circle
+//returns the radius
 double Circle::getRadius() const
 {
     return radius;
 }
 
-//Set a new radius
+//sets a new radius
 void Circle::setRadius(double newRadius)
 {
     radius= (newRadius >= 0) ? newRadius:0;
     
 }
 
-//Return the number of circle objects
+//returns the number of circle objects
 int Circle::getNumberOfObject()
 {
     return numberOfObjects;
 }
 
+// returns true or false if it is <
 bool Circle::operator<(Circle& c)
 {
     if(getRadius() < c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
+
+// returns true or false if it is <=
 bool Circle::operator<=(Circle& c)
 {
     if(getRadius() <= c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
+
+// returns true or false if it is ==
 bool Circle::operator==(Circle& c)
 {
     if(getRadius() == c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
+
+// returns true or false if it is !=
 bool Circle::operator!=(Circle& c)
 {
     if(getRadius() != c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
+
+// returns true or false if it is >
 bool Circle::operator>(Circle& c)
 {
     if(getRadius() > c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
+
+// returns true or false if it is >=
 bool Circle::operator>=(Circle& c)
 {
     if(getRadius() >= c.getRadius())
+    {
         return true;
+    }
     else
+    {
         return false;
+    }
 }
 
 

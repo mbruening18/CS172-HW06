@@ -24,20 +24,25 @@ using namespace std;
 
 void babyName()
 {
+    //creates integer for year and rank
     int year;
     int rank;
+    //strings boy and girls score
     string bscore;
     string gscore;
     
+    //strings the name of the character that is entered
     char ch;
     string name;
     string bname;
     string gname;
     string filename;
   
+    //lets the user enter the year
     cout << "Enter the year: ";
     cin >> year;
     
+    //option of which year user enters
     switch (year)
     {
         case 2010:filename = "Babynameranking2010.txt";
@@ -53,32 +58,43 @@ void babyName()
         default: cout << "wrong entry year!";
     }
     
+    //lets the user enter the gender in F,f or M,m
     cout << "Enter the gender: ";
     cin >> ch;
+    //lets the user enter a name first inital has to be capitalized
     cout << "Enter the name: ";
     cin >> name;
     
+    //inputs
     ifstream input(filename.c_str());
     
+    //checks if file does not exist
     if (input.fail())
     {
         cout << filename << "File not exist. Exit program";
         
     }
+    //if fileexists goes through steps
     if (!input.eof())
     {
+        //while does not have input
         while (!input.eof())
         {
+            //inputs the rank, boy name, boys score, girl name, girl score
             input >> rank >> bname >> bscore >> gname >> gscore;
+            //if entered M,m for gender
             if (ch == 'M' || ch == 'm')
             {
+                //if name equals boys name couts the name and rank in the year they entered
                 if (name == bname)
                 {
                     cout << name << " is ranked #" << rank << " in year " << year<<endl;
                 }
             }
+            //else if entered F,f for gender
             else if (ch == 'F' || ch == 'f')
             {
+                //if name equals girls name couts the name and rank in the year they entered
                 if (name == gname)
                 {
                     cout << name << " is ranked #" << rank << " in year " << year<<endl;
@@ -86,6 +102,7 @@ void babyName()
             }
         }
     }
+    //clouses the file
     input.close();
     
  }

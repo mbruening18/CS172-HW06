@@ -13,25 +13,38 @@
 
 //EX06_04 – Liang Programming Exercise 14.3: The Circle class
 
+//creates a circle class
 class Circle
 {
+//makes private
 private:
     double radius;
     static int numberOfObjects;
-    
+
+//makes public
 public:
+    //no-arg constructor
     Circle();
+    
+    //arg constructor
     Circle(double newRadius);
+    
+    //gets the area, radius, NumberOfObject
     double getArea()const;
     double getRadius()const;
-    void setRadius(double newRadius);
     static int getNumberOfObject();
+    
+    //sets the radius
+    void setRadius(double newRadius);
+    
+    //operator for relational 
     bool operator<(Circle& c);
     bool operator<=(Circle& c);
     bool operator==(Circle& c);
     bool operator!=(Circle& c);
     bool operator>(Circle& c);
     bool operator>=(Circle& c);
+    
     };
 
 #endif /* CircleClass_hpp */

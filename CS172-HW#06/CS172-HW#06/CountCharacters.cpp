@@ -24,17 +24,25 @@ using namespace std;
 
 void countCharacters()
 {
+    //declares int count
     int count = 0;
+    
+    //strings file name
     string fileName;
+    
+    //lets user enter file name
     cout << "Enter a file name: ";
     getline(cin, fileName);
 
+    //sees if file is there
     fstream iofile(fileName, ios::in);
 
+    //if file is not there out puts file could not be opened
     if ( ! iofile )
     {
-        cout << "Error: file could not be opened ";
+        cout << "Error: file could not be opened";
     }
+    //else counts the characters in the file
     else
     {
         char characters; //counts the characters
@@ -42,6 +50,7 @@ void countCharacters()
         {
             count++;
         }
+        //couts how many characters are in the file
         cout << "This file has " << count << " characters." << endl;
     }
 }

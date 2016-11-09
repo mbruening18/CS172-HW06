@@ -12,6 +12,8 @@
 #include <stdio.h>
 
 //EX06_03 – Liang Programming Exercise 13.5: Baby names
+
+//promise
 void babyName();
 
 #endif /* BabyNames_hpp */
