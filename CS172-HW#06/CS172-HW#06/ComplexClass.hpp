@@ -25,18 +25,24 @@ private:
 public:
     //no-arg constructor
     Complex();
-    Complex(double);
-    Complex(double, double);
+    //arg constructor takes 2 variable
+    Complex(double A, double B);
     
+    
+    //gets a double from A and B
     double getA();
     double getB();
     
+    //double for absolute value
     double abs();
+    
+    //complex operator for each +, -, *, /
     Complex operator+(Complex& num);
     Complex operator-(Complex& num);
     Complex operator*(Complex& num);
     Complex operator/(Complex& num);
     
+    //makes it friendly so can use operator
     friend ostream& operator<<(ostream& str,  Complex& num);
     
 };
